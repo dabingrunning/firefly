@@ -16,6 +16,5 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="18sp"
-        android:text="Hello World!" />
-
+        android:text="第二个界面" />
 </LinearLayout>

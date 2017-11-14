@@ -4,18 +4,20 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
+
     <TextView
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:text="返回"/>
+        android:text="返回" />
+
     <TextView
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="18sp"
-        android:text="Hello World!" />
+        android:text="Hello World!"
+        android:textSize="18sp" />
 
 </LinearLayout>

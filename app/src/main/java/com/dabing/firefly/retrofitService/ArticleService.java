@@ -5,12 +5,15 @@ import com.dabing.firefly.util.param.Params;
 
 import java.util.Map;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 /**
  * Created by dabing on 2017/11/8.
@@ -32,5 +35,6 @@ public interface ArticleService {
 
     @POST("new_api/huazhen_article/index")
     Call<ArticleList> getArticleList(@Body Params params);
-
+    @GET("Top25")
+    Call<ResponseBody> getTop25(@Query("start") int start,@Query("count") int count);
 }
